@@ -15,7 +15,7 @@ export const useDarkMode = () => {
        // if don't want save with localStorage will use code is -> theme === 'dark' ? setTheme('light') : setTheme('dark');
         theme === 'dark' ? setMode('light') : setMode('dark');
     }
- //save local storage
+ //save local storage --
     useEffect(()=>{
         const localTheme = window.localStorage.getItem('theme');
         localTheme ? setTheme(localTheme) : setMode('dark')
